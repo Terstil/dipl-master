@@ -127,7 +127,7 @@ namespace dipl
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string s =(this.Controls["tb1"] as TextBox).Text;// обращение к денамическому обекту, если решишь доделать
+            string s =(this.Controls["tb1"] as TextBox).Text;// обращение к динамическому обекту, если решишь доделать
             textBox2.Text = s;
         }
     }
