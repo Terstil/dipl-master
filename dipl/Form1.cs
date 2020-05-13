@@ -149,6 +149,10 @@ namespace dipl
             
         }//Обновление грида
 
-
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string s = "SELECT dishName.DName, Recipe.Products, Recipe.unit, Recipe.weight FROM Recipe INNER JOIN dishName ON Recipe.DName = dishName.Код;";
+            dataGridView1.DataSource = controller.UpdateP(s);
+        }
     }
 }

@@ -42,6 +42,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -160,9 +161,20 @@
             this.progressBar1.Size = new System.Drawing.Size(139, 39);
             this.progressBar1.TabIndex = 13;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(768, 48);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 14;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(772, 291);
+            this.ClientSize = new System.Drawing.Size(855, 291);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.textBox1);
@@ -201,6 +213,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button button6;
     }
 }
 

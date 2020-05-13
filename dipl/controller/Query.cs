@@ -349,6 +349,14 @@ namespace dipl.controller
             command.ExecuteNonQuery();
             connection.Close();
         }
+        public void InsertProdName(string Dname)
+        {
+            connection.Open();
+            command = new OleDbCommand($"INSERT INTO DishName (DName) VALUES ({Dname})", connection);
+            command.Parameters.AddWithValue("DName", Dname);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
         public DataTable FindTable(string dt, DataTable buf)
         {
             connection.Open();
